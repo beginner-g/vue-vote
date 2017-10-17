@@ -1,0 +1,19 @@
+{
+  "votes": [
+    {
+      "type": "addImg",
+      "title": "das",
+      "id": 1
+    },
+    {
+      "type": "addImg",
+      "title": "dasd",
+      "id": 2
+    },
+    {
+      "type": "addImg",
+      "title": "das",
+      "id": 3
+    }
+  ]
+}

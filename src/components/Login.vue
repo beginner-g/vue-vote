@@ -4,16 +4,17 @@
       <p v-if='!isAuthenticated'>你是<input v-model="text" placeholder="你的名字">
         <button v-on:click='handleClick' class='username-button'>保存</button>
       </p>
-      <p v-else>我是{{username}}</p>
+      <p v-else>我是{{username}}
+        <vote></vote>
+      </p>
     </div>
   </div>
 </template>
-
 <script>
-import Comment from './Comment'
+import Vote from './Vote'
 export default {
     name: 'login',
-    components:{Comment},
+    components:{Vote},
     data:()=>({
       text:''
     }),
@@ -65,5 +66,16 @@ input:focus{
   border-radius: 4px;
   color: #fff;
   font-weight: 500;
+}
+.enter{
+  width: 120px;
+  line-height: 30px;
+  display: block;
+  margin: 10px auto;
+  background-color: deeppink;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  text-decoration: none;
 }
 </style>
