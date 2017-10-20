@@ -13,6 +13,7 @@
   </div>
 </template>
 <script>
+import shortid from 'shortid'
 export default {
   name:'vote-action',
   props:['option','allVote'],
@@ -30,17 +31,20 @@ export default {
   },
   methods:{
     handleName:function(){
-      console.log(this.option.id);
+      var shortid = require('shortid');
+      console.log(shortid.generate())
       if(this.complated|| !this.username) return
       let vote ={
         name:this.username,
-        optionId:this.option.id
+        optionId:this.option.id,
+        id:shortid.generate()
       }
-      this.$store.dispatch({type:'voteup',vote})
+
+      this.$store.commit({type:'voteup',vote})
     },
     handleDelete:function(){
       const vote =this.votes.find(t=>t.name===this.username)
-      this.$store.dispatch({type:'delete',id: vote.id})
+      this.$store.commit({type:'delete',id: vote.id})
     }
   }
 }

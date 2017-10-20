@@ -29,32 +29,13 @@
   "votes": [
     {
       "name": "beginner",
-      "optionId": 3,
-      "id": 3
+      "optionId": 1,
+      "id": 1
     },
     {
       "name": "beginner",
-      "optionId": 4,
-      "id": 4
-    },
-    {
-      "name": "beginner",
-      "id": 5
-    },
-    {
-      "name": "hello",
-      "optionId": 4,
-      "id": 9
-    },
-    {
-      "name": "hello",
-      "optionId": 5,
-      "id": 10
-    },
-    {
-      "name": "beginner",
-      "optionId": 2,
-      "id": 11
+      "optionId": 1,
+      "id": 2
     }
   ]
 }

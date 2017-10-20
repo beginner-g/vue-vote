@@ -5,6 +5,7 @@
   "author": "beginner-g <969925523@qq.com>",
   "private": true,
   "scripts": {
+    "deploy": "node ./node_modules/vue-gh-pages/index.js",
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js",
@@ -12,7 +13,9 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "shortid": "^2.2.8",
     "vue": "^2.4.2",
+    "vue-gh-pages": "^1.5.0",
     "vue-router": "^2.8.1",
     "vuex": "^3.0.0"
   },

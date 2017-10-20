@@ -35,7 +35,8 @@
       // },
       handleAdd:function(){
         if(this.title!==''){
-          this.$store.dispatch({type:'addImg',title:this.title})
+          // this.$store.dispatch({type:'addImg',title:this.title})
+          this.$store.commit({type:'addTitle',title:this.title})
           this.title=''
         }
       }

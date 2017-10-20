@@ -16,11 +16,11 @@
       options:function(){
         return this.$store.state.vote.all
       }
-    },
-    created:function(){
-      this.$store.dispatch({type:'loadOptions'})
-      this.$store.dispatch({type:'loadVotes'})
     }
+    // created:function(){
+    //   this.$store.dispatch({type:'loadOptions'})
+    //   this.$store.dispatch({type:'loadVotes'})
+    // }
   }
 </script>
 <style scoped>
