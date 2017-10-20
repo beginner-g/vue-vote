@@ -27,4 +27,7 @@ body{
   align-items: center;
   flex-direction: column;
 }
+#app{
+  width: 100%;
+}
 </style>

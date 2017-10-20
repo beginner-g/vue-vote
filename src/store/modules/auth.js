@@ -7,6 +7,9 @@ const mutations={
     state.username=text
     state.isAuthenticated=true
     console.log(text)
+  },
+  logout(state){
+    state.isAuthenticated=false
   }
 }
 export default {

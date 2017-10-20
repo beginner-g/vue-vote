@@ -1,12 +1,12 @@
 <template>
   <div class="vote">
     <div class="add">
-      <input v-model="topic" class='input-vote'>
+      <!-- <input v-model="topic" class='input-vote'>
       <button @click='handleTopic' class="add-vote">新建投票主题</button>
-      <h1>{{add}}</h1>
+      <h1>{{add}}</h1> -->
       <div class="vote-img">
         <input class='add-input' v-model='title'>
-        <button @click='handleAdd' class="add-img">添加</button>
+        <button @click='handleAdd' class="add-img">添加美食</button>
       </div>
       <options></options>
     </div>
@@ -27,12 +27,12 @@
       }
     },
     methods:{
-      handleTopic:function(){
-        if(this.topic!==''){
-          this.$store.commit({type:'addTitle',topic:this.topic})
-          this.topic=''
-        }
-      },
+      // handleTopic:function(){
+      //   if(this.topic!==''){
+      //     this.$store.commit({type:'addTitle',topic:this.topic})
+      //     this.topic=''
+      //   }
+      // },
       handleAdd:function(){
         if(this.title!==''){
           this.$store.dispatch({type:'addImg',title:this.title})
@@ -45,8 +45,7 @@
 <style scoped>
   .vote{
     background-color: #ccc;
-    width: 250px;
-    margin: 10px;
+    width: 100%;
   }
   .input-vote{
     line-height: 25px;
@@ -63,11 +62,24 @@
   .add-input{
     width: 180px;
     line-height: 25px;
+    border: 0;
+    border-bottom: 3px solid red;
+    background-color: #ccc;
+    font-size: 20px;
+    text-indent: 40px;
+  }
+  .add-input:focus{
+    outline: 0;
   }
   .add-img{
-    width: 50px;
-    line-height: 30px;
+    width: 80px;
+    line-height: 40px;
     text-align: center;
     background-color: #fff;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px yellow;
   }
 </style>

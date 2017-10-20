@@ -5,7 +5,8 @@
         <button v-on:click='handleClick' class='username-button'>保存</button>
       </p>
       <p v-else>我是{{username}}
-        <vote></vote>
+        <button to='/' class="logout" @click='logout'>退出</button>
+        <vote :username='username'></vote>
       </p>
     </div>
   </div>
@@ -32,6 +33,9 @@ export default {
         if(!this.text.trim())return
           this.$store.commit('username',{text:this.text})
           this.text=''
+      },
+      logout:function(){
+        this.$store.commit('logout')
       }
     }
 
@@ -45,8 +49,11 @@ export default {
   padding: 20px 10px;
   line-height: 1.8;
 }
+.username{
+  width: 100%;
+}
 .username p{
-  width: 300px;
+  width: 100%;
   font-size: 20px;
   margin: 30px auto;
 }
@@ -77,5 +84,15 @@ input:focus{
   border: 0;
   color: #fff;
   text-decoration: none;
+}
+.logout{
+  background-color: #FF3D00;
+  width: 80px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  color: #fff;
 }
 </style>

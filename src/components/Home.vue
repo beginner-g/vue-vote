@@ -13,6 +13,11 @@ import Login from './Login'
   }
 </script>
 <style scoped>
+  .home{
+     height: 100vh;
+     width: 100%;
+
+  }
   .login-wrap{
     width: 90%;
     margin: 20px auto;

@@ -1,19 +1,60 @@
 {
-  "votes": [
+  "options": [
     {
       "type": "addImg",
-      "title": "das",
+      "title": "宫保鸡丁",
       "id": 1
     },
     {
       "type": "addImg",
-      "title": "dasd",
+      "title": "鱼香肉丝",
       "id": 2
     },
     {
       "type": "addImg",
-      "title": "das",
+      "title": "酸辣土豆丝",
       "id": 3
+    },
+    {
+      "type": "addImg",
+      "title": "糖醋里脊",
+      "id": 4
+    },
+    {
+      "type": "addImg",
+      "title": "麻婆豆腐",
+      "id": 5
+    }
+  ],
+  "votes": [
+    {
+      "name": "beginner",
+      "optionId": 3,
+      "id": 3
+    },
+    {
+      "name": "beginner",
+      "optionId": 4,
+      "id": 4
+    },
+    {
+      "name": "beginner",
+      "id": 5
+    },
+    {
+      "name": "hello",
+      "optionId": 4,
+      "id": 9
+    },
+    {
+      "name": "hello",
+      "optionId": 5,
+      "id": 10
+    },
+    {
+      "name": "beginner",
+      "optionId": 2,
+      "id": 11
     }
   ]
 }
